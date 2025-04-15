@@ -1,4 +1,3 @@
-// Set target date: June 1, this year at 12:00 CEST (GMT+2)
 const thisYear = new Date().getFullYear();
 const targetDate = new Date(`June 1, ${thisYear} 12:00:00 GMT+0200`).getTime();
 
@@ -7,7 +6,7 @@ function updateCountdown() {
   const diff = targetDate - now;
 
   if (diff <= 0) {
-    document.querySelector('.countdown').innerHTML = '<span>🎉 Time is up!</span>';
+    document.querySelector('.countdown').innerHTML = '00 00 00 00';
     return;
   }
 
